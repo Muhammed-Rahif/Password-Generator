@@ -1,13 +1,16 @@
-import React from 'react';
-import './App.css';
+import React, { useContext } from "react";
+import "./App.css";
+import PasswordGenCard from "./components/PasswordGenCard";
+import { Card } from "ui-neumorphism";
+import { LightThemeContext } from "./contexts/Contexts";
 
 function App() {
+  const { lightTheme } = useContext(LightThemeContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Password Generator</p>
-      </header>
-    </div>
+    <Card dark={!lightTheme} className="App">
+      <PasswordGenCard />
+    </Card>
   );
 }
 
