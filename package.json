@@ -1,6 +1,7 @@
 {
   "name": "password-generator",
   "version": "1.0.0",
+  "homepage": "https://muhammed-rahif.github.io/Password-Generator",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -8,6 +9,7 @@
     "@testing-library/user-event": "^12.8.3",
     "@types/react": "^17.0.19",
     "generate-password": "^1.6.1",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -31,7 +33,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
