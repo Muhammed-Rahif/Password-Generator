@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import { Button, Subtitle2, Switch } from "ui-neumorphism";
+import { Subtitle2, Switch } from "ui-neumorphism";
 import { LightThemeContext } from "../contexts/Contexts";
-import styles from "./DarkModeBtn.module.css";
+import styles from "./DarkModeSwitch.module.css";
 
-function DarkModeBtn(props) {
+function DarkModeSwitch(props) {
   const { lightTheme, setLightTheme } = useContext(LightThemeContext);
 
   const toggleTheme = e => {
@@ -18,4 +18,4 @@ function DarkModeBtn(props) {
   );
 }
 
-export default DarkModeBtn;
+export default DarkModeSwitch;
