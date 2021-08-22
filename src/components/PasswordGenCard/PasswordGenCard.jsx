@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import styles from "./PasswordGenCard.module.css";
 import { TextField, Card, Button, CardHeader, CardContent, H5 } from "ui-neumorphism";
 import passwordDetails from "zxcvbn";
-import { LightThemeContext } from "../contexts/Contexts";
+import { LightThemeContext } from "../../contexts/Contexts";
 import passwordGenerator from "generate-password";
 
 function PasswordGenCard(props) {
@@ -13,8 +13,8 @@ function PasswordGenCard(props) {
 
   const { lightTheme } = useContext(LightThemeContext);
 
-  const getPassStatusByScore = password => {
-    switch (password) {
+  const getPassStatusByScore = statusNum => {
+    switch (statusNum) {
       case 0:
         return "Too weak!";
       case 1:
@@ -31,7 +31,6 @@ function PasswordGenCard(props) {
   };
 
   const handlePasswordChange = password => {
-    document.getElementById("password-input").value = password;
     setPassword(password);
     setPasswordStrong(getPassStatusByScore(passwordDetails(password).score));
   };

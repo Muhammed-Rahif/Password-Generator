@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dark mode switch should change light theme context to true when dark mode switch is disabled 1`] = `
+<div
+  className="darkModeBtnWrapper"
+>
+  <p
+    className="_3yPwv _2vNlX _11JjB _1uvOH "
+    style={Object {}}
+  >
+    Dark Mode
+  </p>
+  <div
+    className="_jzWXa "
+    style={Object {}}
+  >
+    <input
+      checked={true}
+      className="_AQLzt _1zQ0s"
+      id="_01177_"
+      onChange={[Function]}
+      onClick={[Function]}
+      type="checkbox"
+    />
+    <label
+      className="_2hoJO _17_OS"
+      htmlFor="_01177_"
+    >
+      <p
+        className="_3yPwv _NwSHs _11JjB _1uvOH "
+        style={Object {}}
+      />
+    </label>
+  </div>
+</div>
+`;
+
+exports[`dark mode switch should dark mode switch render without crashing 1`] = `
+<div
+  className="darkModeBtnWrapper"
+>
+  <p
+    className="_3yPwv _2vNlX _11JjB _3PUqy "
+    style={Object {}}
+  >
+    Dark Mode
+  </p>
+  <div
+    className="_jzWXa "
+    style={Object {}}
+  >
+    <input
+      checked={true}
+      className="_AQLzt _BQ4h8"
+      id="_01177_"
+      onChange={[Function]}
+      onClick={[Function]}
+      type="checkbox"
+    />
+    <label
+      className="_2hoJO _17_OS"
+      htmlFor="_01177_"
+    >
+      <p
+        className="_3yPwv _NwSHs _11JjB _3PUqy "
+        style={Object {}}
+      />
+    </label>
+  </div>
+</div>
+`;
