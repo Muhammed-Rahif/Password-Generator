@@ -79,6 +79,7 @@ function PasswordGenCard(props) {
               setCopyBtnText("Copy");
             }, 2500);
           }}
+          bgColor="var(--success)"
         >
           {copyBtnText}
         </Button>
@@ -94,6 +95,7 @@ function PasswordGenCard(props) {
             });
             handlePasswordChange(strongPass);
           }}
+          bgColor="var(--info)"
         >
           Generate
         </Button>
