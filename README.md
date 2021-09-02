@@ -22,9 +22,17 @@
 
 ## 📱️ Screenshots <a name = "screenshots"></a>
 
+### Desktop
+
 <div align="center">
   <img width="49%" src="screenshots/shot-1.png" alt="Shot 1" />
   <img width="49%" src="screenshots/shot-2.png" alt="Shot 2" />
+ 
+</div>
+
+### Mobile
+
+<div align="center">
   <img width="49%" src="screenshots/shot-3.png" alt="Shot 3" />
   <img width="49%" src="screenshots/shot-4.png" alt="Shot 4" />
 </div>
